@@ -1,4 +1,4 @@
-# CNNs applied to Math Exercises classification
+# CNNs applied to text classification
 
 Work in progress repository that implements Multi-Class Text Classification using a CNN (Convolutional Neural Network)  for a [Deep Learning university exam](http://www.unife.it/ing/lm.infoauto/deep-learning/scheda-insegnamento-1/en) using [PyTorch](https://github.com/pytorch/pytorch) 1.3, [TorchText](https://github.com/pytorch/text) 0.5 and Python 3.7.
 It also integrates [TensorboardX](https://github.com/lanpa/tensorboardX), a module for visualization with Google’s tensorflow’s Tensorboard (web server to serve visualizations of the training progress of a neural network). 
@@ -16,7 +16,7 @@ For example, given a 4D optimization Calculus exercise to the input, the NN shou
 - Train, evaluate and save model's state
 - Make a prediction from user's input
 - Print infos about dataset and model
-- Test NLPAug a library for Data Augmentation in NLP
+- Test NLPAug (NLP Data Augmentation)
 - Plot Accuracy, Loss and PR curves - TensorboardX 
 - Visualize the embedding space projection - TensorboardX 
 
@@ -69,13 +69,13 @@ pip install torchsummary
 pip install torchtext
 ```
 
- SpaCy is required to tokenize our data. To install spaCy, follow the instructions [here](https://spacy.io/usage/) making sure to install the Italian models with:
+ SpaCy is required to tokenize our data. To install spaCy, follow the instructions [here](https://spacy.io/usage/) making sure to install the Italian (or other language) module with:
 
 ``` bash
 python -m spacy download it_core_news_sm
 ```
 
-I've tried two different embeddings - to build the vocab and load the pre-trained word embeddings - you can download them here:
+I've tried two different Italian embeddings - to build the vocab and load the pre-trained word embeddings - you can download them here:
 - [Human Language Technologies - CNR](http://hlt.isti.cnr.it/wordembeddings/)
 - [Suggested] [Italian CoNLL17 corpus](http://vectors.nlpl.eu/repository/) (filtering by language) 
 
