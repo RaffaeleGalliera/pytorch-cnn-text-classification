@@ -1,0 +1,12 @@
+# Default ignored files
+/workspace.xml
+
+# App specific
+*.pt
+data/
+home/
+tensorboard/
+dataset_folder/
+runs/
+vector_cache/
+.idea
